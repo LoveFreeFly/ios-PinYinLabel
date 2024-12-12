@@ -14,6 +14,10 @@
 		81A1A53A2D0AC66A00E40EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A1A5392D0AC66A00E40EE7 /* Assets.xcassets */; };
 		81A1A53D2D0AC66A00E40EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A1A53B2D0AC66A00E40EE7 /* LaunchScreen.storyboard */; };
 		81A1A5402D0AC66A00E40EE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A1A53F2D0AC66A00E40EE7 /* main.m */; };
+		81A1A54A2D0ACFD500E40EE7 /* HZYPinYinFrameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A1A5492D0ACFD500E40EE7 /* HZYPinYinFrameParser.m */; };
+		81A1A54D2D0AD07C00E40EE7 /* HZYPinYinTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A1A54C2D0AD07C00E40EE7 /* HZYPinYinTextData.m */; };
+		81A1A5502D0AD11B00E40EE7 /* HZYPinYinTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A1A54F2D0AD11B00E40EE7 /* HZYPinYinTextView.m */; };
+		81A1A5522D0AD2C400E40EE7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 81A1A5512D0AD2C400E40EE7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,13 @@
 		81A1A53C2D0AC66A00E40EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81A1A53E2D0AC66A00E40EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81A1A53F2D0AC66A00E40EE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		81A1A5482D0ACFD500E40EE7 /* HZYPinYinFrameParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZYPinYinFrameParser.h; sourceTree = "<group>"; };
+		81A1A5492D0ACFD500E40EE7 /* HZYPinYinFrameParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZYPinYinFrameParser.m; sourceTree = "<group>"; };
+		81A1A54B2D0AD07C00E40EE7 /* HZYPinYinTextData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HZYPinYinTextData.h; path = AppleARKitIntroduce/HZYPinYinTextData.h; sourceTree = SOURCE_ROOT; };
+		81A1A54C2D0AD07C00E40EE7 /* HZYPinYinTextData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HZYPinYinTextData.m; path = AppleARKitIntroduce/HZYPinYinTextData.m; sourceTree = SOURCE_ROOT; };
+		81A1A54E2D0AD11B00E40EE7 /* HZYPinYinTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZYPinYinTextView.h; sourceTree = "<group>"; };
+		81A1A54F2D0AD11B00E40EE7 /* HZYPinYinTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZYPinYinTextView.m; sourceTree = "<group>"; };
+		81A1A5512D0AD2C400E40EE7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +56,7 @@
 		81A1A5212D0AC66900E40EE7 = {
 			isa = PBXGroup;
 			children = (
+				81A1A5512D0AD2C400E40EE7 /* README.md */,
 				81A1A52C2D0AC66900E40EE7 /* AppleARKitIntroduce */,
 				81A1A52B2D0AC66900E40EE7 /* Products */,
 			);
@@ -61,6 +73,8 @@
 		81A1A52C2D0AC66900E40EE7 /* AppleARKitIntroduce */ = {
 			isa = PBXGroup;
 			children = (
+				81A1A5472D0ACFAC00E40EE7 /* PinYinModel */,
+				81A1A5462D0ACF9100E40EE7 /* PinYinView */,
 				81A1A52D2D0AC66900E40EE7 /* AppDelegate.h */,
 				81A1A52E2D0AC66900E40EE7 /* AppDelegate.m */,
 				81A1A5302D0AC66900E40EE7 /* SceneDelegate.h */,
@@ -74,6 +88,26 @@
 				81A1A53F2D0AC66A00E40EE7 /* main.m */,
 			);
 			path = AppleARKitIntroduce;
+			sourceTree = "<group>";
+		};
+		81A1A5462D0ACF9100E40EE7 /* PinYinView */ = {
+			isa = PBXGroup;
+			children = (
+				81A1A54E2D0AD11B00E40EE7 /* HZYPinYinTextView.h */,
+				81A1A54F2D0AD11B00E40EE7 /* HZYPinYinTextView.m */,
+			);
+			path = PinYinView;
+			sourceTree = "<group>";
+		};
+		81A1A5472D0ACFAC00E40EE7 /* PinYinModel */ = {
+			isa = PBXGroup;
+			children = (
+				81A1A5482D0ACFD500E40EE7 /* HZYPinYinFrameParser.h */,
+				81A1A5492D0ACFD500E40EE7 /* HZYPinYinFrameParser.m */,
+				81A1A54B2D0AD07C00E40EE7 /* HZYPinYinTextData.h */,
+				81A1A54C2D0AD07C00E40EE7 /* HZYPinYinTextData.m */,
+			);
+			path = PinYinModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +169,7 @@
 			files = (
 				81A1A53D2D0AC66A00E40EE7 /* LaunchScreen.storyboard in Resources */,
 				81A1A53A2D0AC66A00E40EE7 /* Assets.xcassets in Resources */,
+				81A1A5522D0AD2C400E40EE7 /* README.md in Resources */,
 				81A1A5382D0AC66900E40EE7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,8 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81A1A54A2D0ACFD500E40EE7 /* HZYPinYinFrameParser.m in Sources */,
 				81A1A5352D0AC66900E40EE7 /* ViewController.m in Sources */,
+				81A1A5502D0AD11B00E40EE7 /* HZYPinYinTextView.m in Sources */,
 				81A1A52F2D0AC66900E40EE7 /* AppDelegate.m in Sources */,
+				81A1A54D2D0AD07C00E40EE7 /* HZYPinYinTextData.m in Sources */,
 				81A1A5402D0AC66A00E40EE7 /* main.m in Sources */,
 				81A1A5322D0AC66900E40EE7 /* SceneDelegate.m in Sources */,
 			);
